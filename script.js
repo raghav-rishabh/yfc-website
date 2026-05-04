@@ -191,7 +191,7 @@ video.addEventListener('pause', () => {
       const nums = entry.target.querySelectorAll('.hero-stat-num');
       const data = [
         { val: 500, suffix: '+' },
-        { val: 5,  suffix: '+' },
+        { val: 5,  suffix: 'yrs+' },
         { val: 100,   suffix: '%' },
         // { val: 98,  suffix: '%' },
       ];
