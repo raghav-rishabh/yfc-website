@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — Yaariyan Fitness Club</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="shortcut icon" href="./assests/hero/IMG_7042.jpg" type="image/x-icon">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #ffffff;
+      --bg-secondary: #f7f6f3;
+      --text-primary: #1a1a1a;
+      --text-secondary: #555550;
+      --text-tertiary: #999990;
+      --border: rgba(0,0,0,0.12);
+      --border-medium: rgba(0,0,0,0.22);
+      --radius: 12px;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #1a1a1a;
+        --bg-secondary: #242422;
+        --text-primary: #f0ede8;
+        --text-secondary: #b0ada8;
+        --text-tertiary: #706d68;
+        --border: rgba(255,255,255,0.1);
+        --border-medium: rgba(255,255,255,0.18);
+      }
+    }
+
+    body {
+      font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--bg);
+      color: var(--text-primary);
+      min-height: 100vh;
+    }
+
+    .page {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 4rem 2rem 6rem;
+    }
+
+    .pp-logo {
+      font-size: 12px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--text-tertiary);
+      margin-bottom: 3rem;
+    }
+
+    .pp-logo span {
+      font-family: 'DM Serif Display', Georgia, serif;
+      color: var(--text-primary);
+      font-size: 20px;
+      letter-spacing: 0.06em;
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    .pp-hero {
+      border-left: 2px solid var(--text-primary);
+      padding-left: 1.25rem;
+      margin-bottom: 3rem;
+    }
+
+    .pp-hero h1 {
+      font-family: 'DM Serif Display', Georgia, serif;
+      font-size: 34px;
+      font-weight: 400;
+      color: var(--text-primary);
+      line-height: 1.2;
+      margin-bottom: 8px;
+    }
+
+    .pp-hero p {
+      font-size: 14px;
+      color: var(--text-secondary);
+      font-weight: 300;
+    }
+
+    .pp-meta {
+      display: flex;
+      gap: 2.5rem;
+      flex-wrap: wrap;
+      margin-bottom: 3rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 0.5px solid var(--border);
+    }
+
+    .pp-meta-item label {
+      display: block;
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--text-tertiary);
+      margin-bottom: 4px;
+    }
+
+    .pp-meta-item span {
+      font-size: 13px;
+      color: var(--text-secondary);
+    }
+
+    .pp-section {
+      margin-bottom: 2.5rem;
+    }
+
+    .pp-section-head {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 0.85rem;
+    }
+
+    .pp-num {
+      font-size: 11px;
+      font-weight: 500;
+      color: var(--text-tertiary);
+      min-width: 22px;
+    }
+
+    .pp-section h2 {
+      font-size: 15px;
+      font-weight: 500;
+      color: var(--text-primary);
+    }
+
+    .pp-section p {
+      font-size: 14px;
+      color: var(--text-secondary);
+      line-height: 1.8;
+      font-weight: 300;
+      padding-left: 32px;
+      margin-bottom: 0.6rem;
+    }
+
+    .pp-section ul {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 0.6rem;
+    }
+
+    .pp-section ul li {
+      font-size: 14px;
+      color: var(--text-secondary);
+      line-height: 1.8;
+      font-weight: 300;
+      padding-left: 32px;
+      margin-bottom: 2px;
+    }
+
+    .pp-section ul li::before {
+      content: '—';
+      margin-right: 8px;
+      color: var(--text-tertiary);
+    }
+
+    .pp-section ul li strong {
+      font-weight: 500;
+      color: var(--text-primary);
+    }
+
+    .pp-divider {
+      height: 0.5px;
+      background: var(--border);
+      margin: 0 0 2.5rem;
+    }
+
+    .pp-contact {
+      background: var(--bg-secondary);
+      border-radius: var(--radius);
+      padding: 1.25rem 1.5rem;
+      margin-top: 3rem;
+    }
+
+    .pp-contact strong {
+      font-weight: 500;
+      color: var(--text-primary);
+      font-size: 14px;
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    .pp-contact p {
+      font-size: 13px;
+      color: var(--text-secondary);
+      font-weight: 300;
+      line-height: 1.7;
+    }
+
+    .pp-contact a {
+      color: var(--text-primary);
+      font-weight: 500;
+      text-decoration: none;
+      border-bottom: 0.5px solid var(--border-medium);
+    }
+
+    .pp-contact a:hover {
+      border-bottom-color: var(--text-primary);
+    }
+
+    @media (max-width: 480px) {
+      .page { padding: 2.5rem 1.25rem 4rem; }
+      .pp-hero h1 { font-size: 26px; }
+      .pp-meta { gap: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+
+    <div class="pp-logo">
+      <span>Yaariyan Fitness Club</span>
+      Privacy Policy
+    </div>
+
+    <div class="pp-hero">
+      <h1>Your privacy, our responsibility</h1>
+      <p>We keep it simple — no jargon, no surprises.</p>
+    </div>
+
+    <div class="pp-meta">
+      <div class="pp-meta-item">
+        <label>Effective date</label>
+        <span>May 2025</span>
+      </div>
+      <div class="pp-meta-item">
+        <label>Location</label>
+        <span>Chharra, Aligarh, India</span>
+      </div>
+      <div class="pp-meta-item">
+        <label>Short name</label>
+        <span>YFC</span>
+      </div>
+    </div>
+
+    <div class="pp-section">
+      <div class="pp-section-head"><span class="pp-num">01</span><h2>Who we are</h2></div>
+      <p>Yaariyan Fitness Club (YFC) is a gym based in Chharra, Aligarh, India. This policy explains how we handle information when you interact with us — whether in person, by phone, or through our social media channels.</p>
+    </div>
+
+    <div class="pp-divider"></div>
+
+    <div class="pp-section">
+      <div class="pp-section-head"><span class="pp-num">02</span><h2>Information we collect</h2></div>
+      <p>We collect only what is necessary to provide our services. This may include:</p>
+      <ul>
+        <li>Your name and contact number when you enquire or register as a member</li>
+        <li>Messages you send us via WhatsApp or Instagram direct messages</li>
+        <li>Comments or interactions on our Instagram page</li>
+      </ul>
+      <p>We do not collect sensitive health or payment data through digital channels at this time.</p>
+    </div>
+
+    <div class="pp-divider"></div>
+
+    <div class="pp-section">
+      <div class="pp-section-head"><span class="pp-num">03</span><h2>How we use your information</h2></div>
+      <p>The information we collect is used solely to:</p>
+      <ul>
+        <li>Respond to your queries and membership enquiries</li>
+        <li>Share updates, schedules, and offers with you</li>
+        <li>Provide better customer service</li>
+      </ul>
+      <p>We do not sell, rent, or share your personal information with third parties for marketing purposes.</p>
+    </div>
+
+    <div class="pp-divider"></div>
+
+    <div class="pp-section">
+      <div class="pp-section-head"><span class="pp-num">04</span><h2>Third-party platforms</h2></div>
+      <p>We communicate through the following platforms. These have their own privacy policies that govern how your data is handled on their side:</p>
+      <ul>
+        <li><strong>WhatsApp</strong> (Meta Platforms) — used for direct communication with members and prospects</li>
+        <li><strong>Instagram</strong> (Meta Platforms) — used to share content and respond to messages and comments</li>
+      </ul>
+      <p>We encourage you to review Meta's privacy policy at <a href="https://privacycenter.instagram.com" target="_blank" rel="noopener">Meta's Privacy Center</a>.</p>
+    </div>
+
+    <div class="pp-divider"></div>
+
+    <div class="pp-section">
+      <div class="pp-section-head"><span class="pp-num">05</span><h2>Data retention</h2></div>
+      <p>We retain your contact information only for as long as it is necessary to serve you. If you wish to have your information removed, simply reach out to us and we will delete it promptly.</p>
+    </div>
+
+    <div class="pp-divider"></div>
+
+    <div class="pp-section">
+      <div class="pp-section-head"><span class="pp-num">06</span><h2>Your rights</h2></div>
+      <p>Under applicable Indian law, you have the right to:</p>
+      <ul>
+        <li>Know what personal data we hold about you</li>
+        <li>Request correction of inaccurate information</li>
+        <li>Request deletion of your data</li>
+        <li>Withdraw your consent to be contacted</li>
+      </ul>
+      <p>To exercise any of these rights, contact us using the details below.</p>
+    </div>
+
+    <div class="pp-divider"></div>
+
+    <div class="pp-section">
+      <div class="pp-section-head"><span class="pp-num">07</span><h2>Changes to this policy</h2></div>
+      <p>We may update this policy from time to time. Any significant changes will be communicated through our WhatsApp or Instagram channels. The effective date at the top of this page will always reflect the latest version.</p>
+    </div>
+
+    <div class="pp-contact">
+      <strong>Questions or concerns?</strong>
+      <p>Reach out to us at <a href="mailto:xyz@gmail.com">xyz@gmail.com</a> or message us on WhatsApp or Instagram — we're happy to help.</p>
+    </div>
+
+  </div>
+</body>
+</html>

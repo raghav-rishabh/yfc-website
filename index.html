@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yaariyan Fitness Club — Aapka Apna Gym</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="./assests/hero/IMG_7042.jpg" type="image/x-icon">
+</head>
+<body>
+
+<!-- ─── Navbar ──────────────────────────────────────────── -->
+<nav id="navbar" aria-label="Main navigation">
+  <div class="container nav-inner">
+    <a href="#" class="nav-logo" aria-label="Yaariyan Fitness Club">Yaariyan<span>Fitness</span>Club</a>
+    <ul class="nav-links" role="list">
+      <li><a href="#showcase">Programs</a></li>
+      <li><a href="#transformations">Results</a></li>
+      <li><a href="#membership">Membership</a></li>
+      <li><a href="#instagram">Community</a></li>
+    </ul>
+    <!-- ↓ REPLACE WITH YOUR WHATSAPP NUMBER ↓ -->
+    <a href="https://wa.me/7302068275?text=Hi!%20I%20want%20to%20join%20Yaariyan%20Fitness%20Club." class="nav-cta" target="_blank" rel="noopener">Join Now</a>
+    <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true" aria-label="Navigation menu">
+  <button class="mob-close" onclick="closeMobileMenu()" aria-label="Close menu">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M18 6L6 18M6 6l12 12"/>
+    </svg>
+  </button>
+  <a href="#showcase"       onclick="closeMobileMenu()">Programs</a>
+  <a href="#transformations" onclick="closeMobileMenu()">Results</a>
+  <a href="#membership"     onclick="closeMobileMenu()">Membership</a>
+  <a href="#instagram"      onclick="closeMobileMenu()">Community</a>
+  <!-- ↓ REPLACE WITH YOUR WHATSAPP NUMBER ↓ -->
+  <a href="https://wa.me/7302068275?text=Hi!%20I%20want%20to%20join%20Yaariyan%20Fitness%20Club." class="mob-cta" target="_blank" rel="noopener" onclick="closeMobileMenu()">Join Now on WhatsApp</a>
+</div>
+
+<!-- ─── Hero ────────────────────────────────────────────── -->
+<section id="hero" aria-label="Hero">
+  <!-- ↓ REPLACE THIS IMAGE WITH YOUR GYM BACKGROUND ↓ -->
+  <div class="hero-bg" role="img" aria-label="Gym interior background"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="container hero-inner">
+
+      <!-- LEFT -->
+      <div class="hero-left">
+        <div class="hero-badge">🏋️ Now Enrolling • Limited Spots</div>
+        <h1 class="hero-title">
+          Yaariyan
+          <span class="accent">Fitness</span>
+          Club
+        </h1>
+        <p class="hero-desc">
+          YFC is where elite athletes and everyday heroes train side by side. 
+          State-of-the-art equipment, world-class coaches, and a community built on results.
+        </p>
+        <div class="hero-ctas">
+          <!-- ↓ REPLACE 7302068275 WITH YOUR WHATSAPP NUMBER ↓ -->
+          <a href="https://wa.me/7302068275?text=Hi!%20I%20want%20to%20join%20Yaariyan%20Fitness%20Club." target="_blank" rel="noopener" class="btn-primary" aria-label="Join now via WhatsApp">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+            Join Now
+          </a>
+          <a href="#showcase" class="btn-ghost" aria-label="Explore programs">
+            Explore Programs
+          </a>
+        </div>
+
+        <div class="hero-stats" aria-label="Gym statistics">
+          <div class="hero-stat">
+            <div class="hero-stat-num">500+</div>
+            <div class="hero-stat-label">Active Members</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-num">5yr</div>
+            <div class="hero-stat-label">Established</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-num">100%</div>
+            <div class="hero-stat-label">Satisfaction</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT — Owner card -->
+      <div class="hero-right">
+        <div class="owner-card">
+          <div class="hero-deco" aria-hidden="true"></div>
+          <div class="owner-badge" aria-label="Head Coach badge">Coach & Owner</div>
+          <div class="owner-img-wrap">
+  <img src="./assests/hero/IMG_7042.jpg" alt="Prashant Saxena" class="owner-slide active" loading="lazy" />
+  <img src="./assests/instagrid/Screenshot 2026-05-04 at 8.03.43 PM.png" alt="Prashant Saxena" class="owner-slide" loading="lazy" />
+  <img src="./assests/instagrid/Screenshot 2026-05-04 at 8.03.58 PM.png" alt="Prashant Saxena" class="owner-slide" loading="lazy" />
+</div>
+          <div class="owner-info">
+            <!-- ↓ REPLACE NAME AND ROLE ↓ -->
+            <div class="owner-name">Prashant Saxena</div>
+            <div class="owner-role">50+ Trophies/Medals</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ─── Showcase / Videos ────────────────────────────────── -->
+<section id="showcase" aria-labelledby="showcase-title">
+  <div class="container">
+
+    <div class="showcase-header">
+      <div>
+        <div class="section-label reveal">Our Programs</div>
+        <h2 class="section-title reveal delay-1" id="showcase-title">TRAIN LIKE A<br>CHAMPION</h2>
+      </div>
+      <p class="section-desc reveal delay-2">
+        From powerlifting to HIIT — every program is engineered to push your limits and deliver real results.
+      </p>
+    </div>
+
+    <div class="video-grid">
+      <!--
+        VIDEO CARDS — Replace src in <video> with your actual video clips.
+        Or use a static background image on .vid-placeholder as fallback.
+      -->
+
+      <!-- Card 1 -->
+      <article class="video-card reveal">
+        <!--
+          Replace this background-image URL with your own photo or video thumbnail.
+          Then uncomment the <video> tag and point it to your video source.
+        -->
+        <div class="vid-placeholder" style="background-image: url('./assests/vidthumbs/IMG_7046.jpg');" aria-hidden="true"></div>
+        <video src="./assests/vids/2475BDC2-F7C1-4496-9F18-F73ED6B960BB.MP4" muted loop playsinline preload="none"></video>
+        <div class="video-overlay" aria-hidden="true"></div>
+        <div class="play-btn" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="#000"><path d="M8 5v14l11-7z"/></svg>
+        </div>
+        <div class="video-info">
+          <span class="video-tag">Strength</span>
+          <h3 class="video-title">POWERLIFTING<br>FOUNDATIONS</h3>
+          <p class="video-desc">Build raw strength with progressive overload & expert programming.</p>
+        </div>
+      </article>
+
+      <!-- Card 2 -->
+      <article class="video-card reveal delay-1">
+        <div class="vid-placeholder" style="background-image: url('./assests/vidthumbs/IMG_7047.jpg');" aria-hidden="true"></div>
+        <video src="./assests/vids/411352EE-F074-4AD3-B5F1-A33DC5A50B42.MP4" muted loop playsinline preload="none"></video>
+        <div class="video-overlay" aria-hidden="true"></div>
+        <div class="play-btn" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="#000"><path d="M8 5v14l11-7z"/></svg>
+        </div>
+        <div class="video-info">
+          <span class="video-tag">Lean Muscle Mass</span>
+          <h3 class="video-title">HIIT &<br>CONDITIONING</h3>
+          <p class="video-desc">Max fat burn. High-intensity circuits designed for peak performance.</p>
+        </div>
+      </article>
+
+      <!-- Card 3 -->
+      <article class="video-card reveal delay-2">
+        <div class="vid-placeholder" style="background-image: url('./assests/vidthumbs/IMG_7048.jpg');" aria-hidden="true"></div>
+        <video src="./assests/vids/674AE9AF-2D62-42CA-89CC-347437EF5D3A.mov" muted loop playsinline preload="none"></video>
+        <div class="video-overlay" aria-hidden="true"></div>
+        <div class="play-btn" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="#000"><path d="M8 5v14l11-7z"/></svg>
+        </div>
+        <div class="video-info">
+          <span class="video-tag">Muscle Building</span>
+          <h3 class="video-title">HYPERTROPHY<br>MASTERY</h3>
+          <p class="video-desc">Science-backed muscle building with personalised split programs.</p>
+        </div>
+      </article>
+    </div>
+
+    <!-- Machines Row -->
+    <div>
+      <p class="machines-heading reveal">Our Equipment</p>
+      <div class="machines-row" id="machinesRow" role="list" aria-label="Gym equipment">
+
+        <!-- ↓ REPLACE IMAGES WITH YOUR OWN MACHINE PHOTOS ↓ -->
+        <div class="machine-card reveal" role="listitem">
+          <img class="machine-img" src="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?w=400&q=70" alt="Cable Crossover Machine" loading="lazy" />
+          <div class="machine-info">
+            <div class="machine-name">Cable Crossover</div>
+            <div class="machine-desc">Full-range cable system for sculpted chest & shoulders.</div>
+          </div>
+        </div>
+
+        <div class="machine-card reveal delay-1" role="listitem">
+          <img class="machine-img" src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=70" alt="Squat Rack" loading="lazy" />
+          <div class="machine-info">
+            <div class="machine-name">Power Squat Rack</div>
+            <div class="machine-desc">Olympic-grade racks with safety catches & j-hooks.</div>
+          </div>
+        </div>
+
+        <div class="machine-card reveal delay-2" role="listitem">
+          <img class="machine-img" src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=400&q=70" alt="Cardio Zone" loading="lazy" />
+          <div class="machine-info">
+            <div class="machine-name">Cardio Zone</div>
+            <div class="machine-desc">25+ treadmills, bikes & ellipticals with live metrics.</div>
+          </div>
+        </div>
+
+        <div class="machine-card reveal delay-3" role="listitem">
+          <img class="machine-img" src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=400&q=70" alt="Dumbell Rack" loading="lazy" />
+          <div class="machine-info">
+            <div class="machine-name">Free Weight Area</div>
+            <div class="machine-desc">Full dumbbell set 2–60 kg + Olympic barbells & plates.</div>
+          </div>
+        </div>
+
+        <div class="machine-card reveal delay-4" role="listitem">
+          <img class="machine-img" src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&q=70" alt="Leg Press Machine" loading="lazy" />
+          <div class="machine-info">
+            <div class="machine-name">Leg Press</div>
+            <div class="machine-desc">Plate-loaded leg press for maximal lower body strength.</div>
+          </div>
+        </div>
+
+        <div class="machine-card reveal delay-5" role="listitem">
+          <img class="machine-img" src="https://images.unsplash.com/photo-1518611012118-696072aa579a?w=400&q=70" alt="Functional Trainer" loading="lazy" />
+          <div class="machine-info">
+            <div class="machine-name">Functional Trainer</div>
+            <div class="machine-desc">360° cable system for sport-specific movement patterns.</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ─── Transformations ──────────────────────────────────── -->
+<section id="transformations" aria-labelledby="transforms-title">
+  <div class="container">
+
+    <div class="transforms-header">
+      <div>
+        <div class="section-label reveal">Real Results</div>
+        <h2 class="section-title reveal delay-1" id="transforms-title">REAL<br>TRANSFORMATIONS</h2>
+      </div>
+      <p class="section-desc reveal delay-2">
+        These aren't filters or editing — these are real YFC members who showed up, put in the work, and changed their lives.
+      </p>
+    </div>
+
+    <div class="transforms-grid">
+
+      <!--
+        ↓ TRANSFORMATION CARDS ↓
+        Replace "before" and "after" images with real member photos.
+        Always get member consent before displaying.
+      -->
+
+      <!-- Card 1 -->
+      <article class="transform-card reveal">
+        <div class="before-after">
+          <div class="ba-slider">
+            <div class="ba-before">
+              <img src="./assests/before/IMG_7049 2.jpg" loading="lazy" />
+              <span class="ba-label">Before</span>
+            </div>
+            <div class="ba-after" style="width: 50%;">
+              <img src="./assests/after/IMG_7049.jpg" alt="Rahul after transformation" loading="lazy" />
+              <span class="ba-label">After</span>
+            </div>
+          </div>
+          <div class="ba-divider" aria-hidden="true"></div>
+        </div>
+        <div class="transform-meta">
+          <span class="transform-duration">Only 40 days</span>
+          <div class="transform-name">Aniket Verma</div>
+          <p class="transform-caption">Gained significant muscle definition through our Body Recomposition program.</p>
+        </div>
+      </article>
+
+      <!-- Card 2 -->
+      <article class="transform-card reveal delay-1">
+        <div class="before-after">
+          <div class="ba-slider">
+            <div class="ba-before">
+              <img src="./assests/before/IMG_7050 2.jpg" alt="Priya before transformation" loading="lazy" />
+              <span class="ba-label">Before</span>
+            </div>
+            <div class="ba-after" style="width: 50%;">
+              <img src="./assests/after/IMG_7050.jpg" alt="Priya after transformation" loading="lazy" />
+              <span class="ba-label">After</span>
+            </div>
+          </div>
+          <div class="ba-divider" aria-hidden="true"></div>
+        </div>
+        <div class="transform-meta">
+          <span class="transform-duration">2 Months</span>
+          <div class="transform-name">Gopal Soni</div>
+          <p class="transform-caption">Reduced 7-8 kgs of body fat through sheer dedication and hardwork.</p>
+        </div>
+      </article>
+
+      <!-- Card 3 -->
+      <article class="transform-card reveal delay-2">
+        <div class="before-after">
+          <div class="ba-slider">
+            <div class="ba-before">
+              <img src="./assests/before/IMG_7051 2.jpg" alt="Arjun before transformation" loading="lazy" />
+              <span class="ba-label">Before</span>
+            </div>
+            <div class="ba-after" style="width: 50%;">
+              <img src="./assests/after/IMG_7051.jpg" alt="Arjun after transformation" loading="lazy" />
+              <span class="ba-label">After</span>
+            </div>
+          </div>
+          <div class="ba-divider" aria-hidden="true"></div>
+        </div>
+        <div class="transform-meta">
+          <span class="transform-duration">Without any fat burners 🔥 </span>
+          <div class="transform-name">Aryan Maheshwari</div>
+          <p class="transform-caption">lost 10+ kgs of body fat and gained 5+ kg of lean muscles.</p>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ─── Membership CTA ────────────────────────────────────── -->
+<section id="membership" aria-labelledby="membership-title">
+  <div class="membership-bg-glow" aria-hidden="true"></div>
+  <div class="container">
+    <div class="membership-inner">
+
+      <div class="section-label reveal" style="justify-content:center;">Membership Plans</div>
+      <h2 class="membership-title reveal delay-1" id="membership-title">
+        START YOUR
+        <em>TRANSFORMATION</em>
+        TODAY
+      </h2>
+      <p class="membership-desc reveal delay-2">
+        No contracts. No excuses. Just results. Message us on WhatsApp to get a free trial session — walk in and feel the YFC difference.
+      </p>
+
+      <div class="membership-ctas reveal delay-3">
+        <!-- ↓ REPLACE 7302068275 WITH YOUR WHATSAPP NUMBER ↓ -->
+        <a href="https://wa.me/7302068275?text=Hi!%20I%27d%20like%20a%20free%20trial%20at%20Yaariyan%20Fitness%20Club." target="_blank" rel="noopener" class="btn-wa" aria-label="Chat on WhatsApp to get a free trial">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+          Get Free Trial — WhatsApp
+        </a>
+        <!-- ↓ REPLACE WITH YOUR INSTAGRAM PROFILE URL ↓ -->
+        <a href="https://www.instagram.com/prashant_ki_yariyan/" target="_blank" rel="noopener" class="btn-ig" aria-label="Follow IronPeak on Instagram">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+          Connect on Instagram
+        </a>
+      </div>
+
+      <!-- Pricing Plans -->
+      <div class="plans-row">
+        <!-- ↓ CUSTOMIZE PLAN NAMES, PRICES & FEATURES ↓ -->
+        <div class="plan-card reveal">
+          <div class="plan-name">Starter</div>
+          <div class="plan-price">₹999 <span>/mo</span></div>
+          <div class="plan-period">billed monthly</div>
+          <ul class="plan-features">
+            <li>Gym floor access (6 AM – 10 PM)</li>
+            <li>Locker & shower facilities</li>
+            <li>Basic fitness assessment</li>
+            <li>Group class access (2/week)</li>
+          </ul>
+          <a href="https://wa.me/7302068275?text=I'm%20interested%20in%20the%20Starter%20plan%20at%20YFC." target="_blank" rel="noopener" class="plan-btn" aria-label="Join the Starter plan">Get Started</a>
+        </div>
+
+        <div class="plan-card featured reveal delay-1">
+          <div class="plan-featured-badge">Most Popular</div>
+          <div class="plan-name">Pro</div>
+          <div class="plan-price">₹1,999 <span>/mo</span></div>
+          <div class="plan-period">billed monthly</div>
+          <ul class="plan-features">
+            <li>Unlimited gym access (24/7)</li>
+            <li>Personal trainer (4 sessions/mo)</li>
+            <li>Custom meal & workout plan</li>
+            <li>Unlimited group classes</li>
+            <li>Body composition tracking</li>
+          </ul>
+          <a href="https://wa.me/7302068275?text=I'm%20interested%20in%20the%20Pro%20plan%20at%20YFC." target="_blank" rel="noopener" class="plan-btn" aria-label="Join the Pro plan">Join Pro</a>
+        </div>
+
+        <div class="plan-card reveal delay-2">
+          <div class="plan-name">Elite</div>
+          <div class="plan-price">₹3,499 <span>/mo</span></div>
+          <div class="plan-period">billed monthly</div>
+          <ul class="plan-features">
+            <li>Everything in Pro</li>
+            <li>Unlimited 1-on-1 PT sessions</li>
+            <li>Sports nutrition consultation</li>
+            <li>Priority booking & recovery zone</li>
+            <li>Quarterly transformation review</li>
+          </ul>
+          <a href="https://wa.me/7302068275?text=I'm%20interested%20in%20the%20Elite%20plan%20at%20YFC." target="_blank" rel="noopener" class="plan-btn" aria-label="Join the Elite plan">Go Elite</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ─── Instagram Trust ───────────────────────────────────── -->
+<section id="instagram" aria-labelledby="ig-title">
+  <div class="container">
+
+    <div class="section-label reveal" style="margin-bottom:8px; text-align: center; justify-content: center;" >Social Proof</div>
+    <h2 class="section-title reveal delay-1" id="ig-title" style="margin-bottom:52px;">FOLLOW THE<br>JOURNEY</h2>
+
+    <div class="ig-inner">
+
+      <!-- Profile Card -->
+      <div class="ig-profile reveal">
+        <div class="ig-avatar-wrap">
+          <!-- ↓ REPLACE WITH YOUR GYM LOGO / PROFILE IMAGE ↓ -->
+          <img class="ig-avatar" src="./assests/hero/IMG_7042.jpg" alt="YFC Gym Instagram profile photo" loading="lazy" />
+          <div class="ig-verified" aria-label="Verified account">
+            <svg viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+          </div>
+        </div>
+        <!-- ↓ REPLACE WITH YOUR INSTAGRAM USERNAME, BIO, FOLLOWER COUNTS ↓ -->
+        <div class="ig-username">@yaariyanfitnessclub</div>
+        <div class="ig-bio">🏋️ Elite Training. Real Results.<br>📍Chharra, Aligarh<br>👇 DM for free trial</div>
+        <div class="ig-stats">
+          <div class="ig-stat">
+            <div class="ig-stat-num">300+</div>
+            <div class="ig-stat-label">Posts</div>
+          </div>
+          <div class="ig-stat">
+            <div class="ig-stat-num">3000</div>
+            <div class="ig-stat-label">Followers</div>
+          </div>
+          <div class="ig-stat">
+            <div class="ig-stat-num">450+</div>
+            <div class="ig-stat-label">Following</div>
+          </div>
+        </div>
+        <!-- ↓ REPLACE HREF WITH YOUR INSTAGRAM PROFILE URL ↓ -->
+        <a href="https://www.instagram.com/prashant_ki_yariyan/" target="_blank" rel="noopener" class="btn-follow" aria-label="Follow IronPeak on Instagram">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+          Follow on Instagram
+        </a>
+      </div>
+
+      <!-- Post Grid -->
+      <div class="ig-right reveal delay-2">
+        <div class="ig-grid" aria-label="Recent Instagram posts">
+
+          <!--
+            ↓ REPLACE THESE 9 IMAGES WITH YOUR ACTUAL INSTAGRAM POST THUMBNAILS ↓
+            Also update alt text with post descriptions for accessibility.
+          -->
+          <a href="https://www.instagram.com/prashant_ki_yariyan/" target="_blank" rel="noopener" class="ig-post" aria-label="Instagram post: Member deadlift training">
+            <img src="./assests/instagrid/Screenshot 2026-05-04 at 8.02.27 PM.png" alt="Gym floor training session" loading="lazy" />
+            <div class="ig-post-overlay" aria-hidden="true">
+              <span class="ig-post-stat"><svg viewBox="0 0 24 24" fill="#fff"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>847</span>
+            </div>
+          </a>
+          <a href="https://www.instagram.com/prashant_ki_yariyan/" target="_blank" rel="noopener" class="ig-post" aria-label="Instagram post: Transformation Tuesday">
+            <img src="./assests/instagrid/Screenshot 2026-05-04 at 8.02.34 PM.png" alt="Member transformation progress" loading="lazy" />
+            <div class="ig-post-overlay" aria-hidden="true">
+              <span class="ig-post-stat"><svg viewBox="0 0 24 24" fill="#fff"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>1.2K</span>
+            </div>
+          </a>
+          <a href="https://www.instagram.com/prashant_ki_yariyan/" target="_blank" rel="noopener" class="ig-post" aria-label="Instagram post: Group class">
+            <img src="./assests/instagrid/Screenshot 2026-05-04 at 8.02.41 PM.png" alt="Group HIIT training class" loading="lazy" />
+            <div class="ig-post-overlay" aria-hidden="true">
+              <span class="ig-post-stat"><svg viewBox="0 0 24 24" fill="#fff"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>634</span>
+            </div>
+          </a>
+          <a href="https://www.instagram.com/prashant_ki_yariyan/" target="_blank" rel="noopener" class="ig-post" aria-label="Instagram post: Powerlifting session">
+            <img src="./assests/instagrid/Screenshot 2026-05-04 at 8.02.55 PM.png" alt="Powerlifting training session" loading="lazy" />
+            <div class="ig-post-overlay" aria-hidden="true">
+              <span class="ig-post-stat"><svg viewBox="0 0 24 24" fill="#fff"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>988</span>
+            </div>
+          </a>
+          <a href="https://www.instagram.com/prashant_ki_yariyan/" target="_blank" rel="noopener" class="ig-post" aria-label="Instagram post: Equipment showcase">
+            <img src="./assests/instagrid/Screenshot 2026-05-04 at 8.03.30 PM.png" loading="lazy" />
+            <div class="ig-post-overlay" aria-hidden="true">
+              <span class="ig-post-stat"><svg viewBox="0 0 24 24" fill="#fff"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>512</span>
+            </div>
+          </a>
+          <a href="https://www.instagram.com/prashant_ki_yariyan/" target="_blank" rel="noopener" class="ig-post" aria-label="Instagram post: Morning training">
+            <img src="./assests/instagrid/Screenshot 2026-05-04 at 8.03.38 PM.png" alt="Early morning training session" loading="lazy" />
+            <div class="ig-post-overlay" aria-hidden="true">
+              <span class="ig-post-stat"><svg viewBox="0 0 24 24" fill="#fff"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>731</span>
+            </div>
+          </a>
+          <a href="https://www.instagram.com/prashant_ki_yariyan/" target="_blank" rel="noopener" class="ig-post" aria-label="Instagram post: Nutrition tips">
+            <img src="./assests/instagrid/Screenshot 2026-05-04 at 8.03.43 PM.png" alt="Athlete nutrition and workout" loading="lazy" />
+            <div class="ig-post-overlay" aria-hidden="true">
+              <span class="ig-post-stat"><svg viewBox="0 0 24 24" fill="#fff"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>429</span>
+            </div>
+          </a>
+          <a href="https://www.instagram.com/prashant_ki_yariyan/" target="_blank" rel="noopener" class="ig-post" aria-label="Instagram post: Member milestone">
+            <img src="./assests/instagrid/Screenshot 2026-05-04 at 8.04.33 PM.png" alt="Member achieving fitness milestone" loading="lazy" />
+            <div class="ig-post-overlay" aria-hidden="true">
+              <span class="ig-post-stat"><svg viewBox="0 0 24 24" fill="#fff"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>867</span>
+            </div>
+          </a>
+          <a href="https://www.instagram.com/prashant_ki_yariyan/" target="_blank" rel="noopener" class="ig-post" aria-label="Instagram post: Community vibes">
+            <img src="./assests/instagrid/Screenshot 2026-05-04 at 8.03.58 PM.png" alt="Gym community and team spirit" loading="lazy" />
+            <div class="ig-post-overlay" aria-hidden="true">
+              <span class="ig-post-stat"><svg viewBox="0 0 24 24" fill="#fff"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>1.1K</span>
+            </div>
+          </a>
+
+        </div>
+
+        <div class="ig-cta-row">
+          <!-- ↓ REPLACE HREF WITH YOUR INSTAGRAM URL ↓ -->
+          <a href="https://www.instagram.com/prashant_ki_yariyan/" target="_blank" rel="noopener" class="ig-more-link" aria-label="View more posts on Instagram">
+            View all posts
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+          </a>
+          <span style="font-size:0.72rem;color:var(--muted);">@yaariyanfitnessclub · 3K followers</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ─── Footer ───────────────────────────────────────────── -->
+<footer id="footer" aria-label="Site footer">
+  <div class="footer-bg-text" aria-hidden="true">Yariyan Fitness Club</div>
+  <div class="container footer-inner">
+
+    <div class="footer-logo reveal">
+      Yaariyan<span> Fitness </span>Club
+    </div>
+    <p class="footer-tagline reveal delay-1">Tagde hone pe dhyaan do — Prashant Saxena</p>
+
+    <nav class="footer-links reveal delay-2" aria-label="Footer navigation">
+      <!-- ↓ UPDATE LINKS WITH YOUR ACTUAL PAGES / CONTACT INFO ↓ -->
+      <a href="https://www.instagram.com/prashant_ki_yariyan/">Contact for promotions🔥</a>
+      <div class="footer-divider" aria-hidden="true"></div>
+      <!-- <a href="https://maps.google.com" target="_blank" rel="noopener">Location</a>
+      <div class="footer-divider" aria-hidden="true"></div> -->
+      <a href="./yfc-privacy-policy.html">Privacy Policy</a>
+      <div class="footer-divider" aria-hidden="true"></div>
+      <!-- <a href="#">Terms of Use</a>
+      <div class="footer-divider" aria-hidden="true"></div> -->
+      <a href="https://wa.me/7302068275?text=Hi!%20I%20want%20to%20join%20Yaariyan%20Fitness%20Club." target="_blank" rel="noopener">WhatsApp</a>
+    </nav>
+
+    <div class="footer-socials reveal delay-3">
+      <a href="https://www.instagram.com/prashant_ki_yariyan/" target="_blank" rel="noopener" class="footer-social-link" aria-label="IronPeak on Instagram">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+      </a>
+      <a href="https://wa.me/7302068275" target="_blank" rel="noopener" class="footer-social-link" aria-label="IronPeak on WhatsApp">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+      </a>
+      <a href="https://l.instagram.com/?u=https%3A%2F%2Fyoutube.com%2Fchannel%2FUCcOuiEQWZgBG8TBp_9hjSyw%3Ffbclid%3DPAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnei77E1DlV8xI6omrEgmGz59h1Cb7I4dZ39OoWIQQT-wfcU22pn-8Wj06or8_aem_lqtoIFYrQg0_FOeEihe5Ug&e=AUDGb7LYmNGvl-hLjk3EaYk96oIBt5ZE1EMRU_-tVVlkSPOIUuWjuMuAivHxVxaOFl-yKbPBY3EJHilPGdj3RktlZTM5C-4WRVU3hkh4VA" target="_blank" rel="noopener" class="footer-social-link" aria-label="IronPeak on YouTube">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+      </a>
+    </div>
+
+    <p class="footer-copy reveal delay-4">
+      © 2026 Yaariyan Fitness Club. All rights reserved. Built with 💪 for champions.
+    </p>
+
+  </div>
+</footer>
+
+<!-- Scroll to Top -->
+<button id="scroll-top" aria-label="Scroll back to top">
+  <svg viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2.5" aria-hidden="true">
+    <path d="M18 15l-6-6-6 6"/>
+  </svg>
+</button>
+
+<!-- ─── JavaScript ─────────────────────────────────────────── -->
+<script src="script.js"></script>
+</body>
+</html>
