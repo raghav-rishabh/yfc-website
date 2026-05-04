@@ -203,13 +203,25 @@ video.addEventListener('pause', () => {
   if (heroStats) statsObserver.observe(heroStats);
 
   /* ── Smooth parallax on hero bg (desktop only) ── */
-  if (window.matchMedia('(min-width: 768px)').matches) {
-    const heroBg = document.querySelector('.hero-bg');
-    window.addEventListener('scroll', () => {
-      if (!heroBg) return;
-      heroBg.style.transform = `translateY(${window.scrollY * 0.3}px)`;
-    }, { passive: true });
-  }
+  // if (window.matchMedia('(min-width: 768px)').matches) {
+  //   const heroBg = document.querySelector('.hero-bg');
+  //   window.addEventListener('scroll', () => {
+  //     if (!heroBg) return;
+  //     heroBg.style.transform = `translateY(${window.scrollY * 0.3}px)`;
+  //   }, { passive: true });
+  // }
+
+
+const heroBg = document.querySelector('.hero-bg');
+
+window.addEventListener('scroll', () => {
+  if (!heroBg) return;
+
+  const speed = window.innerWidth < 768 ? .3 : 0.3; 
+  heroBg.style.transform = `translateY(${window.scrollY * speed}px)`;
+}, { passive: true });
+
+
 
   document.querySelectorAll('.before-after').forEach(container => {
   const after = container.querySelector('.ba-after');
