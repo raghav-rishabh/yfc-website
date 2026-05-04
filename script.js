@@ -261,16 +261,20 @@ const ownerSlides = document.querySelectorAll('.owner-slide');
 
 if (ownerSlides.length > 1) {
   let current = 0;
-
+ownerSlides[0].classList.add('active');
   setInterval(() => {
     const next = (current + 1) % ownerSlides.length;
 
+    // bring next image above
+    ownerSlides[next].style.zIndex = 4;
     ownerSlides[next].classList.add('active');
 
+    // fade out current AFTER next starts fading in
     setTimeout(() => {
       ownerSlides[current].classList.remove('active');
+      ownerSlides[current].style.zIndex = 1;
       current = next;
-    }, 300); // small overlap for smooth fade
+    }, 800); // match CSS transition time
 
-  }, 1500);
+  }, 2000);
 }
