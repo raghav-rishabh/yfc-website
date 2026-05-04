@@ -224,6 +224,11 @@ backdrop-filter: blur(24px);
       background-attachment: fixed;
       z-index: 0;
     }
+    @media (max-width: 768px) {
+  .hero-bg {
+    background-attachment: scroll;
+  }
+}
     .hero-overlay {
       position: absolute;
       inset: 0;
